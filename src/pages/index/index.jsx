@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { View, Text, Switch } from "@tarojs/components";
-import Taro from "@tarojs/taro";
+// import Taro from "@tarojs/taro";
 import "./index.css";
 
 export default class Index extends Component {
@@ -29,15 +29,28 @@ export default class Index extends Component {
 
   render() {
     return (
-      <View className="index">
-          <Text>默认样式</Text>
-          <Switch checked onChange={this.onChange}/>
+      <View className="block">
+        <View className="block">
+          <Text className="title">默认样式</Text>
+          <Switch checked onChange={this.onChange} />
+        </View>
 
-          <Text>中文样式</Text>
-          <Switch checked onChange={this.onChange} className="switch-demo2" showtext="true" texton="开启" textoff="关闭"/>
+        <View className="block">
+          <Text className="title">中文样式</Text>
+          <Switch
+            checked
+            onChange={this.onChange}
+            className="switch-demo2"
+            showtext="true"
+            texton="开启"
+            textoff="关闭"
+          />
+        </View>
 
-          <Text>Checkbox样式</Text>
+        <View className="block">
+          <Text className="title">Checkbox样式</Text>
           <Switch type="checkbox" onChange={this.onChange} />
+        </View>
       </View>
     );
   }

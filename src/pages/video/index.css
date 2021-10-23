@@ -1,0 +1,11 @@
+.block{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+}
+
+.video-box{
+  width: 100%;
+  height: 300px;
+}

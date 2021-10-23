@@ -1,4 +1,13 @@
+.block{
+  display: flex;
+  width: 100%;
+}
+.title{
+  display: flex;
+  width: 100%;
+}
 .switch-demo2{
   textoff-color: #1f00ab;
   texton-color: #ab0000;
 }
+

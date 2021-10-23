@@ -1,5 +1,6 @@
 export default {
   pages: [
+    'pages/video/index',
     'pages/index/index'
   ],
   window: {
