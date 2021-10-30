@@ -1,0 +1,15 @@
+.block{
+  display: flex;
+  flex-direction: column;
+}
+
+.inline-block{
+  display: flex;
+  flex-direction: row;
+}
+
+.pickertext{
+  background-color: red;
+  width: 300;
+  height: 400;
+}

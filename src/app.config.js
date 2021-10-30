@@ -1,5 +1,6 @@
 export default {
   pages: [
+    'pages/picker/index',
     'pages/video/index',
     'pages/index/index'
   ],
