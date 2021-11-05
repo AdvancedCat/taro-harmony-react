@@ -3,10 +3,6 @@ import { View, Text, Picker } from "@tarojs/components";
 import "./index.css";
 
 export default class Index extends Component {
-  state = {
-    textValue: "",
-  };
-
   render() {
     return (
       <View className="block">
@@ -17,7 +13,6 @@ export default class Index extends Component {
             mode="selector"
             value={3}
             range={["1", "2", "3", "4"]}
-            selected={1}
             onChange={this.onChange}
             onCancel={this.onCancel}
           ></Picker>
@@ -59,7 +54,6 @@ export default class Index extends Component {
             className="picker"
             mode="multiSelector"
             value={[0, 1, 1]}
-            selected={[1,1,0]}
             range={[
               ["a", "b", "c"],
               ["d", "e"],
@@ -119,8 +113,6 @@ export default class Index extends Component {
             className="picker"
             mode="datetime"
             value={"2021-11-11-13-13"}
-            selected={'12-12-10-10'}
-            lunar={true}
             onChange={this.onChange}
             onCancel={this.onCancel}
           ></Picker>
