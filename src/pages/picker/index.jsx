@@ -95,6 +95,18 @@ export default class Index extends Component {
         </View>
 
         <View className="inline-block">
+          <Text>time(秒):</Text>
+          <Picker
+            className="picker"
+            mode="time"
+            value={"12:30:45"}
+            containsecond={true}
+            onChange={this.onChange}
+            onCancel={this.onCancel}
+          ></Picker>
+        </View>
+
+        <View className="inline-block">
           <Text>date:</Text>
           <Picker
             className="picker"
