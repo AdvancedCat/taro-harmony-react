@@ -1,0 +1,19 @@
+/* .pv-block{
+  display: flex;
+  flex-direction: column;
+} */
+
+.pv-inline-block{
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  margin-top: 10;
+}
+
+.pv-pickerview{
+  background-color: #ccc;
+  width: 400px;
+  height: 200px;
+  font-size: 16;
+  color: black;
+}
